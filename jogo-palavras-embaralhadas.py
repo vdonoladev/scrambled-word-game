@@ -1,19 +1,19 @@
 import random
 
-tentativa = 7
-palavras = 'TESTE','PROGRAMA','SHOW','OVO','LINUX','PYTHON','VÍCTOR','JAVASCRIPT','CARRO','FERRARI','CAMARO','BRANCO','PESQUISAR','COMPUTAÇÃO'
-sorteado = random.choice(palavras)
-while tentativa != 0:
-	embaralha = random.sample(sorteado, len(sorteado))
-	juntar_palavra_embaralhada = ''.join(embaralha)
-	print(juntar_palavra_embaralhada)
+attempt = 7
+words = 'TEST', 'PROGRAM', 'SHOW', 'EGG', 'LINUX', 'PYTHON', 'JAVASCRIPT', 'CAR', 'FERRARI', 'CAMARO', 'WHITE', 'SEARCH ', 'COMPUTING'
+drawn = random.choice(words)
+while attempt != 0:
+	shuffles = random.sample(drawn, len(drawn))
+	join_scrambled_word = ''.join(shuffles)
+	print(join_scrambled_word)
 	print("="*20)
-	tent = input("Digite a palavra: ").upper()
-	if tent == sorteado:
-		print("Parabéns, você venceu!")
+	tent = input("Type the word: ").upper()
+	if tent == drawn:
+		print("Congratulations you won!")
 		break
 	else:
-		tentativa -= 1
-		print(f"Você errou! Tentativas restantes: {tentativa}")
+		attempt -= 1
+		print(f"You missed! Remaining attempts: {attempt}")
 		print("="*20)
 		
