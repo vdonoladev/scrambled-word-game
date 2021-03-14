@@ -1,7 +1,7 @@
 import random
 
 attempt = 7
-words = 'TEST', 'PROGRAM', 'SHOW', 'EGG', 'LINUX', 'PYTHON', 'JAVASCRIPT', 'CAR', 'FERRARI', 'CAMARO', 'WHITE', 'SEARCH ', 'COMPUTING'
+words = 'TEST', 'PROGRAM', 'SHOW', 'EGG', 'LINUX', 'PYTHON', 'JAVASCRIPT', 'CAR', 'FERRARI', 'CAMARO', 'WHITE', 'SEARCH', 'COMPUTING'
 drawn = random.choice(words)
 while attempt != 0:
     shuffles = random.sample(drawn, len(drawn))
