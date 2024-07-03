@@ -1,18 +1,18 @@
 import random
 
 attempt = 7
-words = 'TEST', 'PROGRAM', 'SHOW', 'EGG', 'LINUX', 'PYTHON', 'JAVASCRIPT', 'CAR', 'FERRARI', 'CAMARO', 'WHITE', 'SEARCH', 'COMPUTING'
+words = 'TESTE', 'PROGRAMA', 'SHOW', 'OVO', 'LINUX', 'PYTHON', 'JAVASCRIPT', 'CARRO', 'FERRARI', 'CAMARO', 'BRANCO', 'PESQUISAR', 'COMPUTAÇÃO'
 drawn = random.choice(words)
 while attempt != 0:
     shuffles = random.sample(drawn, len(drawn))
     join_scrambled_word = ''.join(shuffles)
     print(join_scrambled_word)
     print("="*20)
-    tent = input("Type the word: ").upper()
+    tent = input("Digite a palavra: ").upper()
     if tent == drawn:
-        print("Congratulations you won!")
+        print("Parabéns, você venceu!")
         break
     else:
         attempt -= 1
-        print(f"You missed! Remaining attempts: {attempt}")
+        print(f"Você errou! Tentativas restantes: {attempt}")
         print("="*20)
